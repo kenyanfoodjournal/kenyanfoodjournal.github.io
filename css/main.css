@@ -1,0 +1,216 @@
+/* 1. Base */
+html {
+   /*background-color:#F8F0C6;*/
+   color: #000000;
+   font-family: "Montserrat",sans-serif;
+   font-size: 16px;
+   line-height: 1.25;
+   min-height: 100vh;
+   min-width: 300px;
+   overflow-x: hidden;
+}
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
+body {
+    margin: 0px 5px 0px 5px;
+}
+/* 2. Shared */
+/* 3. Specific */
+
+/*3a. header */
+.main-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.main-header li {
+  display: inline-block;  
+}
+.main-nav li a {
+    border-bottom: 2px solid #ff7400;
+    color: currentColor;
+     margin-right: 5px;
+    padding: 2px;
+    text-decoration: none;  
+}
+.logo {
+    border: 2px solid #ff7400;
+    border-radius: 10px;
+    padding: 5px;
+    text-align:left;
+}
+.social li {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+/*3b. content*/
+.wallpaper {
+    align-items: center;
+    background-image: url(/images/egg-salad.JPG);
+    background-position: center; /*important*/
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    left:0 ;
+    top: 0;
+    width: 100%;
+}
+.welcome-message {
+    background-color: #ffffff;
+    border: 3px solid white;
+    color:#000000;
+    font-family: "Sansita Swashed",sans-serif;
+    font-size: 1.25rem; /*temporary*/
+    font-weight: bold; /*temporary*/
+    padding: 20px;
+}
+.view-recipes {
+    display: block;
+    margin-top: 3rem;
+}
+.button {
+    background-color:transparent;
+    border: 5px solid  #ff7400;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: 1000;  
+}
+.hr {
+    background-color: #ff4700;
+    border:none;
+    height: 2.5px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    transform-origin: center left;
+}
+.topic {
+    margin-top: 15px;
+    text-decoration:underline ;
+    text-decoration-color: #ff7400;
+}
+.recipe-info {
+    display: flex;
+    margin-top: 10px;
+    min-height: 100%; /*questionable*/
+}
+.picture-image {
+    border-radius:300px ;
+    margin-right: 20px;
+}
+.reviews {
+    opacity: 0.8;
+}
+/*3c. footer*/
+.footer-content {
+    align-items: center;
+    background-color: #ff7400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.developer {
+    border-bottom: 2px solid #000000;
+    display: inline-block;
+    font-weight: 800;
+    margin-left: 3px;
+}
+.developer:hover {
+    transform: scale(1.1);
+}
+/* 4. Responsiveness */
+/* for galaxy fold and friends 😴 */
+@media screen and (max-width:335px) {
+    .main-nav li {
+        display: block;
+        margin-top: 3px;
+    }
+    .main-nav li a {
+        border-bottom: none;
+        text-decoration: underline;
+        text-decoration-color: #ff7400;
+    }
+}
+/* for tablets */
+@media screen and (max-width:799px) {
+    .recipe-info {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+    }
+      .main-header {
+        display: flex;
+        flex-direction:column;
+        flex-wrap: nowrap;
+    }
+    .logo, .social, .main-nav {
+        margin: 5px;
+    }
+}
+/*for desktop*/
+@media screen and (min-width:800px) {
+    .recipe-info {
+        align-items: center;
+    }
+}
+/* for recipes*/
+.head {
+    text-align: center;
+    text-decoration: underline;
+}
+.goat {
+    background-color:#F6E8B1 ;
+    display: flex;
+    justify-content: space-between;
+}
+.sides {
+    order: 3;
+}
+.picture {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.ingredients {
+    margin-right: 50px;
+    order: 1;
+}
+.ingredients ul li {
+    border-top: 1px dashed  black;
+    padding: 3px;
+}
+.procedure {
+    order: 2;
+}
+.procedure li {
+    padding-bottom: 3px;
+}
+.instructions {
+    text-decoration: underline #ff4700;
+}
+@media screen and (max-width:799px) {
+    .goat {
+        flex-direction: column;
+    }
+    .sides {
+        order: 1;
+    }
+    .ingredients {
+        order:2;
+    }
+    .procedure {
+        order:3;
+        margin-left: 20px;
+    }
+}
+
+
