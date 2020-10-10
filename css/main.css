@@ -16,6 +16,7 @@ a {
 }
 body {
     margin: 0px 5px 0px 5px;
+    position: relative;
 }
 /* 2. Shared */
 /* 3. Specific */
@@ -53,6 +54,9 @@ body {
     opacity: 0.3;
 }
 /*3b. content*/
+.main-content {
+    padding-bottom:2.5rem ;
+}
 .wallpaper {
     align-items: center;
     background-image: url(/images/egg-salad.JPG);
@@ -115,10 +119,14 @@ body {
 .footer-content {
     align-items: center;
     background-color: #ff7400;
+    bottom: 0;
     display: flex;
+    height:2.5rem ;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
+    position: absolute;
+    width: 100%;
 }
 .developer {
     border-bottom: 2px solid #000000;
@@ -166,6 +174,9 @@ body {
     }
 }
 /* for recipes*/
+.recipe-wrapper {
+    padding-bottom: 3.5rem;
+}
 .head {
     text-align: center;
     text-decoration: underline;
