@@ -176,6 +176,7 @@ body {
 /* for recipes*/
 .recipe-wrapper {
     padding-bottom: 3.5rem;
+    position: relative;
 }
 .head {
     text-align: center;
