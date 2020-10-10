@@ -70,9 +70,9 @@ body {
     background-color: #ffffff;
     border: 3px solid white;
     color:#000000;
-    font-family: "Sansita Swashed",sans-serif;
+    font-family: "Varela Round",sans-serif;
     font-size: 1.25rem; /*temporary*/
-    font-weight: bold; /*temporary*/
+    font-weight: 800; /*temporary*/
     padding: 20px;
 }
 .view-recipes {
