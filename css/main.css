@@ -49,6 +49,9 @@ body {
     margin-right: 10px;
     font-size: 1.5rem;
 }
+.inactive {
+    opacity: 0.3;
+}
 /*3b. content*/
 .wallpaper {
     align-items: center;
