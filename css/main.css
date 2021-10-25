@@ -18,6 +18,10 @@ body {
     margin: 0px 5px 0px 5px;
     position: relative;
 }
+/* img {
+    width: 100%;
+    height: auto;
+} */
 /* 2. Shared */
 /* 3. Specific */
 
@@ -109,7 +113,7 @@ body {
     min-height: 100%; /*questionable*/
 }
 .picture-image {
-    border-radius:300px ;
+    border-radius:10px ;
     margin-right: 20px;
 }
 .reviews {
@@ -136,6 +140,17 @@ body {
 }
 .developer:hover {
     transform: scale(1.1);
+}
+
+/* new code II */
+.ingredients,.procedure {
+    padding: 10px;
+}
+.procedure ol li {
+    margin-bottom: 5px;
+}
+aside figure {
+    margin-top: 20px;
 }
 /* 4. Responsiveness */
 /* for galaxy fold and friends 😴 */
@@ -175,6 +190,7 @@ body {
 }
 /* for recipes*/
 .recipe-wrapper {
+    /* padding: 10px; */
     padding-bottom: 3.5rem;
     position: relative;
 }
@@ -227,5 +243,12 @@ body {
         margin-left: 20px;
     }
 }
-
+/* new code */
+.our-recipes a {
+    display: block;
+    margin-top: 30px;
+}
+.recipe-wrapper .head {
+    margin-bottom: 20px;
+}
 
